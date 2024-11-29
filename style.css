@@ -42,6 +42,10 @@ body{
     margin-right: 50px;
 }
 
+#mobile-image{
+    display: none;
+}
+
 h1{
     color:hsl(234, 29%, 20%);
     align-self: center;
@@ -79,7 +83,7 @@ li span {
 
 form p{
     font-family: myFirstFont;
-    font-size: 10px;
+    font-size: 11px;
     margin-bottom: 7px;
     margin-top: 20px;
 }
@@ -95,6 +99,22 @@ form input{
     margin-bottom: 10px;
 }
 
+.error-message{
+    color:red;
+    font-weight: bold;
+    position: absolute;
+    left:250px;
+    font-size: 11px;
+    bottom: 200px;
+    margin-left: 35px;
+
+}
+
+.button-error{
+    background-color: #ffe8e6;
+    border: solid 1px red;
+}
+
 button{
     width:100%;
     height: 50px;
@@ -108,10 +128,19 @@ button{
 
 }
 
+button:hover{
+    background-color: hsl(4, 100%, 67%);
+}
+
 .illustration{
     height: 450px;
     float: right;
     flex: 50%;
+}
+
+#hidden{
+    display: none;
+    
 }
 
 #footer{
@@ -129,6 +158,100 @@ button{
 #footer a{
     color: white;
 }
+
+.container-success{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+    width: 30%;
+}
+
+
+
+.container-success h1{
+    text-align: left;
+}
+
+.container-success p{
+    font-size: 14px;
+}
+
+@media (max-width: 600px){
+    body{
+        background-color: white;
+    }
+    .illustration{
+        display: none;
+    }
+
+    #mobile-image{
+        display: flex;
+        flex-direction: column;
+        border-radius: 0,0, 10px,10px;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .container{ 
+        flex-direction: column;
+        padding: 0; 
+    }
+
+    .main-container{
+        margin:0;
+        padding: 0;
+    }
+    h1{
+        text-align:justify;
+        margin-top:20px;
+        
+    }
+    #footer{
+        display: none;
+    }
+
+    .container-success img{
+        width: 60px;
+        height: 60px;
+    }
+    .container-success{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        width: 300px;
+        height: 500px;
+    }
+    
+    .container-success h1{
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container-success p{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 120px;
+    }
+    .error-message{
+        color:red;
+        font-weight: bold;
+        position: absolute;
+        left:250px;
+        font-size: 11px;
+        bottom: 128px;
+        margin-left: -10px;
+    
+    }
+}
+
 
 /* ## Colors
 

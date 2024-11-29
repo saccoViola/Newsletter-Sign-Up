@@ -19,8 +19,9 @@
 <body>
 
   <!-- Sign-up form start -->
-    <div class="container">
+    <div class="container" id="newsletter-form">
         <div class="main-container">
+            <img id="mobile-image"src="assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
             <h1>Stay updated!</h1>
 
             <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -31,32 +32,32 @@
                 <li><span>And much more!</span></li>
             </ul>
        
-            <form action="">
+            <form action="index.html" method="GET" id="form">
                 <p>Email address</p>
-                <input type="email@company.com" placeholder="email@company.com">
+                <!-- <span class="error-message">Valid email required</span> -->
+                <input id="insert-email" type="email@company.com" placeholder="email@company.com">
                 <br>
-                <button type="submit">Subscribe to monthly newsletter</button>
+                <button id="subscribe" type="submit">Subscribe to monthly newsletter</button>
             </form>
         </div>
         <div class="img-container">
             <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up" class="illustration">
         </div>
-    </div>    
-  <!-- Sign-up form end -->
+    </div> 
 
   <!-- Success message start -->
 
-    <!-- <div>
+    <div class="container-success" id="hidden">
         <img src="assets/images/icon-success.svg" alt="">
         <h1>Thanks for subscribing!</h1>
 
         <p>
-            A confirmation email has been sent to ash@loremcompany.com. 
+            A confirmation email has been sent to <b>ash@loremcompany.com</b>. 
             Please open it and click the button inside to confirm your subscription.
         </p>
 
-        <button>Dismiss message</button>
-    </div> -->
+        <button id="dismiss">Dismiss message</button>
+    </div> 
 
   <!-- Success message end -->
   
